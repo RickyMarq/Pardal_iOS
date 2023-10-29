@@ -1,0 +1,28 @@
+PODS:
+  - CHTCollectionViewWaterfallLayout (0.9.10):
+    - CHTCollectionViewWaterfallLayout/Swift (= 0.9.10)
+  - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
+  - SDWebImage (5.18.3):
+    - SDWebImage/Core (= 5.18.3)
+  - SDWebImage/Core (5.18.3)
+  - SkeletonView (1.30.4)
+
+DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout
+  - SDWebImage (~> 5.0)
+  - SkeletonView
+
+SPEC REPOS:
+  trunk:
+    - CHTCollectionViewWaterfallLayout
+    - SDWebImage
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
+  SDWebImage: 96e0c18ef14010b7485210e92fac888587ebb958
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+
+PODFILE CHECKSUM: d91ae27cf5c38ea139f78972e7376db80ad0129b
+
+COCOAPODS: 1.14.2
