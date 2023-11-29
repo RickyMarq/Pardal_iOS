@@ -1,25 +1,23 @@
 # This workflow will build a Swift project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
 
-name: CI-Pardal
+name: Swift
 
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  test:
-    name: Test
+  build:
+
     runs-on: macos-latest
-    strategy:
-        matrix:
-          destination: ['platform=iOS Simulator,OS=13.2.2,name=iPhone 11 Pro Max']
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Build
-        run: xcodebuild clean build -workspace FakeNews.xcworkspace -scheme FakeNews -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-        env: 
-         destination: ${{ matrix.destination }}
-      - name: Test
-        run: |
-        env: 
-         destination: ${{ matrix.destination }}
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
+
