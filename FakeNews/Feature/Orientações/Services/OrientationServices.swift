@@ -14,7 +14,7 @@ protocol OrientationServicesProtocol: AnyObject {
 class OrientationServices: OrientationServicesProtocol {
     
     func getOrientations(completion: @escaping (Result<[OrientationModel]?, Error>) -> Void) {
-        guard let url = URL(string: "http://localhost:3000/getOrientation") else {return}
+        guard let url = URL(string: "https://fake-news-api-beige.vercel.app/getOrientation") else {return}
         
         let session = URLSession.shared
         let request = URLRequest(url: url)
