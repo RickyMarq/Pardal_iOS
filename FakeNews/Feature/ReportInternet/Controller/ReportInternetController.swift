@@ -59,8 +59,8 @@ extension ReportInternetController: ReportInternetViewProtocol {
     
     func reportAction() {
         print("Action.....")
-        guard let url = URL(string: "https://sis.mpsp.mp.br/atendimentocidadao/Promotorias/Manifestacao/EscolherTipoDeIdentificacao") else {return}
-        UIApplication.shared.open(url)
+        //guard let url = URL(string: "https://sis.mpsp.mp.br/atendimentocidadao/Promotorias/Manifestacao/EscolherTipoDeIdentificacao") else {return}
+        openSafariPageWith(url: "https://sis.mpsp.mp.br/atendimentocidadao/Promotorias/Manifestacao/EscolherTipoDeIdentificacao")
     }
     
 }

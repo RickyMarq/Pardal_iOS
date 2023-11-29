@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		813ADDAD49D495B54B042673 /* Pods_FakeNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901B6446A05E790B2E4FE706 /* Pods_FakeNews.framework */; };
+		BE107ABE2B17F8C3003D8949 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE107ABD2B17F8C3003D8949 /* UIViewController+Extension.swift */; };
 		BE1114D42B13B5E8001C121F /* CreateReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1114D32B13B5E8001C121F /* CreateReportController.swift */; };
 		BE1114D72B13B628001C121F /* CreateReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1114D62B13B628001C121F /* CreateReportView.swift */; };
 		BE38FAF52AEF005100C1E539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38FAF42AEF005100C1E539 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		41464885ED08C0A5A389D86E /* Pods-FakeNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNews.debug.xcconfig"; path = "Target Support Files/Pods-FakeNews/Pods-FakeNews.debug.xcconfig"; sourceTree = "<group>"; };
 		6F7B9BD0169D1B5CB5F412B5 /* Pods-FakeNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNews.release.xcconfig"; path = "Target Support Files/Pods-FakeNews/Pods-FakeNews.release.xcconfig"; sourceTree = "<group>"; };
 		901B6446A05E790B2E4FE706 /* Pods_FakeNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE107ABD2B17F8C3003D8949 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BE1114D32B13B5E8001C121F /* CreateReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReportController.swift; sourceTree = "<group>"; };
 		BE1114D62B13B628001C121F /* CreateReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReportView.swift; sourceTree = "<group>"; };
 		BE38FAF12AEF005100C1E539 /* FakeNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -254,6 +256,7 @@
 			children = (
 				BE38FB172AEF06CE00C1E539 /* ViewCode.swift */,
 				BEA29C2A2AF42388008DC98F /* UIView+Extension.swift */,
+				BE107ABD2B17F8C3003D8949 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE107ABE2B17F8C3003D8949 /* UIViewController+Extension.swift in Sources */,
 				BED8A5002AF075A000DC62BB /* ReportViewModel.swift in Sources */,
 				BED8A4FD2AF0712300DC62BB /* Section.swift in Sources */,
 				BEBFE6012B1014FD0047BE64 /* ReportInternetController.swift in Sources */,
