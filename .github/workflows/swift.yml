@@ -16,8 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Build
-        run: |
-          xcodebuild clean build -project FakeNews.xcodeproj -scheme FakeNews -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        run: xcodebuild clean build -workspace FakeNews.xcworkspace -scheme FakeNews -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
       - name: Test
